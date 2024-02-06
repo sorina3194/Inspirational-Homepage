@@ -8,24 +8,9 @@ import {
   selectIsLoadingWeather,
 } from "../Containers/weatherSlice";
 
-const weatherContainer = {
-  display: "flex",
-  justifyContent: "center",
-  alignItems: "center",
-  marginLeft: "80%",
-  marginTop: "15px",
-  marginRight:"15px",
-  boxShadow: "rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px",
-  borderRadius: "10px",
-}
-const weatherDisplay = {
-  display: "flex",
-  justifyContent: "flex-end",
-  alignItems: "baseline",
-  fontSize: "20px",
-  color: "white",
-  textShadow: "rgb(0, 0, 0) 1px 0px 5px"
-}
+import './weather.css'
+
+
 const Weather = () => {
   const dispatch = useDispatch();
   const weather = useSelector(selectWeather);
@@ -43,9 +28,9 @@ const Weather = () => {
   const icon = `https:${weather.current.condition.icon}`
 
   return (
-    <div style={weatherContainer}>
+    <div className='weatherContainer'>
       <img src={icon} alt="icon" />
-      <div style={weatherDisplay}>
+      <div className='weatherDisplay'>
         <h1>{degrees} °</h1>
         <div>{text}</div>
       </div>

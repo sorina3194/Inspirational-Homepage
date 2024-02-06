@@ -9,13 +9,14 @@ const goalsSlice = createSlice({
     addGoal: (state, action) => {
       state.goals[action.payload.id] = action.payload;
     },
+    removeGoal: (state, action) => {
+     delete state.goals[action.payload]
+    }
   },
 });
 
 export const selectGoals = (state) => state.goals.goals;
 
-export const { addGoal } = goalsSlice.actions;
+export const { addGoal , removeGoal} = goalsSlice.actions;
 
 export default goalsSlice.reducer;
-
-

@@ -8,16 +8,8 @@ import {
   selectIsLoadingQuote,
 } from "../Containers/quoteSlice";
 
-const quoteContainer = {
-  padding: "10px",
-  textAlign: "center",
-  color: "white",
-  textShadow: "rgb(0, 0, 0) 1px 0px 5px",
-  margin: "15px",
-  boxShadow:
-    "rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px",
-  borderRadius: "10px",
-};
+import "./quote.css"
+
 const Quote = () => {
   const dispatch = useDispatch();
   const quote = useSelector(selectQuote);
@@ -34,7 +26,7 @@ const Quote = () => {
   const author = quote.author;
 
   return (
-    <div style={quoteContainer}>
+    <div className='quoteContainer'>
       <h2>{content}</h2>
       <h5>{author}</h5>
     </div>
