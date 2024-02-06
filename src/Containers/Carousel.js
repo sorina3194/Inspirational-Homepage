@@ -7,41 +7,84 @@ import nature5 from "../img/nature5.jpg";
 import nature6 from "../img/nature6.jpg";
 import nature7 from "../img/nature7.jpg";
 import nature8 from "../img/nature8.jpg";
-
+import './carousel.css'
 const img = {
   height: "100vh",
   filter: "blur(5px)",
 };
 const buttonStyle = {
-  opacity: "1"
-}
+  opacity: "1",
+};
 export default function Carousel() {
   return (
-    <div id='carouselSlide' className="carousel slide carousel-fade" style={{position: "absolute", top: 0, bottom:0, left:0, right:0, zIndex:-1}}>
-      <div className="carousel-inner" >
+    <div
+      id="carouselSlide"
+      className="carousel slide carousel-fade"
+    >
+      <div className="carousel-inner">
         <div className="carousel-item active">
-          <img src={nature1} alt="carousel-img" className="d-block w-100" style={img} />
+          <img
+            src={nature1}
+            alt="carousel-img"
+            className="d-block w-100"
+            style={img}
+          />
         </div>
         <div className="carousel-item">
-          <img src={nature2} className="d-block  w-100" alt="carousel-img" style={img}/>
+          <img
+            src={nature2}
+            className="d-block  w-100"
+            alt="carousel-img"
+            style={img}
+          />
         </div>
         <div className="carousel-item">
-          <img src={nature3} className="d-block  w-100"  alt="carousel-img" style={img}/>
+          <img
+            src={nature3}
+            className="d-block  w-100"
+            alt="carousel-img"
+            style={img}
+          />
         </div>
         <div className="carousel-item">
-          <img src={nature4} className="d-block w-100" alt="carousel-img" style={img}/>
+          <img
+            src={nature4}
+            className="d-block w-100"
+            alt="carousel-img"
+            style={img}
+          />
         </div>
         <div className="carousel-item">
-          <img src={nature5} className="d-block  w-100" alt="carousel-img" style={img}/>
+          <img
+            src={nature5}
+            className="d-block  w-100"
+            alt="carousel-img"
+            style={img}
+          />
         </div>
         <div className="carousel-item">
-          <img src={nature6} className="d-block  w-100" alt="carousel-img" style={img}/>
+          <img
+            src={nature6}
+            className="d-block  w-100"
+            alt="carousel-img"
+            style={img}
+          />
         </div>
         <div className="carousel-item">
-          <img src={nature7} className="d-block  w-100" alt="carousel-img" style={img} />
+          <img
+            src={nature7}
+            className="d-block  w-100"
+            alt="carousel-img"
+            style={img}
+          />
         </div>
         <div className="carousel-item">
-          <img src={nature8} className="d-block o w-100" alt="carousel-img" style={img}/>
+          <img
+            src={nature8}
+            className="d-block o w-100"
+            alt="carousel-img"
+            style={img}
+          />
         </div>
       </div>
       <button
