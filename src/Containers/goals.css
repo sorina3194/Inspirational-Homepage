@@ -114,3 +114,8 @@ padding: 10px;}
 .goal:hover .buttons {
   visibility: visible;
 }
+
+.disabled-goal {
+  opacity: 0.4;
+  pointer-events: none;
+}

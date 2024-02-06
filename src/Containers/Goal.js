@@ -1,22 +1,27 @@
 import React from "react";
 import "./goals.css";
-import { removeGoal } from "./goalsSlice";
+import { completeGoal, removeGoal } from "./goalsSlice";
 import { useDispatch } from "react-redux";
-
 
 export function Goal({ goal }) {
   const dispatch = useDispatch();
 
   const handleRemoveClick = (e) => {
     dispatch(removeGoal(goal.id));
-  }
+  };
+
+  const handleDoneClick = (e) => {
+    dispatch(completeGoal(goal.id));
+  };
 
   return (
-    <div style={{position : "relative"}}>
-      <div className='content'>{goal.content}</div>
+    <div className={goal.done ? "disabled-goal" : ''} style={{ position: "relative" }}>
+      <div className="content">{goal.content}</div>
       <div className="buttons">
-        <button onClick={handleRemoveClick} id="removeButton">REMOVE</button>
-        <button id="doneButton">DONE</button>
+        <button onClick={handleRemoveClick} id="removeButton">
+          REMOVE
+        </button>
+        <button onClick={handleDoneClick} id="doneButton">DONE</button>
       </div>
     </div>
   );
