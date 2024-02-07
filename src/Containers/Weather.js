@@ -33,7 +33,7 @@ const Weather = () => {
         <img src={icon} alt="icon" />
         <div className='weatherDisplay'>
           <p className="degrees">{degrees} °</p>
-          <div className="text">{text}</div>
+          <div className="weatherText">{text}</div>
         </div>
       </div>
     </section>

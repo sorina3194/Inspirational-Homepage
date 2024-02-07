@@ -1,12 +1,13 @@
 import React from "react";
-import nature1 from "../img/nature1.jpg";
-import nature2 from "../img/nature2.jpg";
-import nature3 from "../img/nature3.jpg";
-import nature4 from "../img/nature4.jpg";
-import nature5 from "../img/nature5.jpg";
-import nature6 from "../img/nature6.jpg";
-import nature7 from "../img/nature7.jpg";
-import nature8 from "../img/nature8.jpg";
+import landscape1 from "../img/landscape1.jpeg";
+import landscape2 from "../img/landscape2.jpeg";
+import landscape3 from "../img/landscape3.jpeg";
+import landscape4 from "../img/landscape4.jpeg";
+import landscape5 from "../img/landscape5.jpeg";
+import landscape6 from "../img/landscape6.jpeg";
+import landscape7 from "../img/landscape7.jpeg";
+import landscape8 from "../img/landscape8.jpeg";
+
 import './carousel.css'
 const img = {
   height: "100vh",
@@ -24,7 +25,7 @@ export default function Carousel() {
       <div className="carousel-inner">
         <div className="carousel-item active">
           <img
-            src={nature1}
+            src={landscape1}
             alt="carousel-img"
             className="d-block w-100"
             style={img}
@@ -32,7 +33,7 @@ export default function Carousel() {
         </div>
         <div className="carousel-item">
           <img
-            src={nature2}
+            src={landscape2}
             className="d-block  w-100"
             alt="carousel-img"
             style={img}
@@ -40,7 +41,7 @@ export default function Carousel() {
         </div>
         <div className="carousel-item">
           <img
-            src={nature3}
+            src={landscape3}
             className="d-block  w-100"
             alt="carousel-img"
             style={img}
@@ -48,7 +49,7 @@ export default function Carousel() {
         </div>
         <div className="carousel-item">
           <img
-            src={nature4}
+            src={landscape4}
             className="d-block w-100"
             alt="carousel-img"
             style={img}
@@ -56,7 +57,7 @@ export default function Carousel() {
         </div>
         <div className="carousel-item">
           <img
-            src={nature5}
+            src={landscape5}
             className="d-block  w-100"
             alt="carousel-img"
             style={img}
@@ -64,7 +65,7 @@ export default function Carousel() {
         </div>
         <div className="carousel-item">
           <img
-            src={nature6}
+            src={landscape6}
             className="d-block  w-100"
             alt="carousel-img"
             style={img}
@@ -72,7 +73,7 @@ export default function Carousel() {
         </div>
         <div className="carousel-item">
           <img
-            src={nature7}
+            src={landscape7}
             className="d-block  w-100"
             alt="carousel-img"
             style={img}
@@ -80,7 +81,7 @@ export default function Carousel() {
         </div>
         <div className="carousel-item">
           <img
-            src={nature8}
+            src={landscape8}
             className="d-block o w-100"
             alt="carousel-img"
             style={img}

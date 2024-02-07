@@ -20,7 +20,7 @@ export default function NewGoalForm() {
   return (
     <section className="formSection">
       <form id="goalsForm" onSubmit={handleSubmit}>
-        <h1>What's on your mind today?</h1>
+        <p className="text">What's on your mind today?</p>
         <input
           id="input"
           type="text"
