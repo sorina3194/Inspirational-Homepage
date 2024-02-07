@@ -26,10 +26,12 @@ const Quote = () => {
   const author = quote.author;
 
   return (
-    <div className='quoteContainer'>
-      <h2>{content}</h2>
-      <h5>{author}</h5>
-    </div>
+    <section className="quoteSection">
+      <div className='quote'>
+        <p className="content">{content}</p>
+        <p className="author">{author}</p>
+      </div>
+    </section>
   );
 };
 

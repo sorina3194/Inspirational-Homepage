@@ -28,13 +28,15 @@ const Weather = () => {
   const icon = `https:${weather.current.condition.icon}`
 
   return (
-    <div className='weatherContainer'>
-      <img src={icon} alt="icon" />
-      <div className='weatherDisplay'>
-        <h1>{degrees} °</h1>
-        <div>{text}</div>
+    <section className="weatherSection">
+      <div className='weather'>
+        <img src={icon} alt="icon" />
+        <div className='weatherDisplay'>
+          <p className="degrees">{degrees} °</p>
+          <div className="text">{text}</div>
+        </div>
       </div>
-    </div>
+    </section>
     )
 };
 

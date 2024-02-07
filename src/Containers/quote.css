@@ -1,11 +1,37 @@
-.quoteContainer {
-  box-shadow: rgba(17, 17, 26, 1) 0px 4px 16px,
-    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+.quoteSection {
+  display: flex;
+  justify-content: center;
+}
+.quote {
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   padding: 10px;
   text-align: center;
   color: white;
-  text-shadow: rgb(0, 0, 0) 1px 0px 5px;
-  margin: 15px;
+  text-shadow: 2px 1px 4px rgba(0, 0, 0, 1);
   border-radius: 10px;
-  margin: 50px;
+  margin: 30px;
+  width: 70%;
+}
+
+.content{
+  font-size: 25px;
+}
+.author{
+  font-size: 15px;
+}
+
+
+@media screen and (max-width: 600px) {
+  .quote {
+    margin: 15px;
+    width: 80%;
+  }
+  .content {
+    font-size: 15px;
+  }
+  .author{
+    font-size: 10px;
+  }
 }
