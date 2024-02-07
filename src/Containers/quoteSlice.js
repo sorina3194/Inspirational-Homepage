@@ -14,10 +14,7 @@ export const loadQuoteData = createAsyncThunk(
 const quoteSlice = createSlice({
   name: "quote",
   initialState: {
-    quote: {
-      content: "Love is the only force capable of transforming an enemy into a friend.",
-      author: "Martin Luther King Jr."
-    },
+    quote: {},
     isLoadingQuote: false,
     failedToLoadQuote: false,
   },

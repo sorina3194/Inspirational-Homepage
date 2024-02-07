@@ -15,9 +15,9 @@ const Quote = () => {
   const quote = useSelector(selectQuote);
   const isLoading = useSelector(selectIsLoadingQuote);
 
-  // useEffect(() => {
-  //   dispatch(loadQuoteData());
-  // }, [dispatch]);
+  useEffect(() => {
+    dispatch(loadQuoteData());
+  }, [dispatch]);
 
   if (isLoading) return <div>Loading Quote</div>;
   if (!quote.content) return null;

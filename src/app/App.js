@@ -8,6 +8,7 @@ import GoalAddForm from "../Containers/GoalAddForm";
 import "./app.css";
 
 function App() {
+  
   return (
     <Provider store={store}>
       <div className="App">

@@ -16,9 +16,9 @@ const Weather = () => {
   const weather = useSelector(selectWeather);
   const isLoading = useSelector(selectIsLoadingWeather);
 
-  // useEffect(() => {
-  //   dispatch(loadWeatherData());
-  // }, [dispatch]);
+  useEffect(() => {
+    dispatch(loadWeatherData());
+  }, [dispatch]);
 
   if (isLoading) return <div>Loading Weather</div>;
   if (!weather.current) return null;
